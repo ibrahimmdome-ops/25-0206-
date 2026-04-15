@@ -1,149 +1,187 @@
+<!-- ================= HOME PAGE (index.html) ================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wildlife Gallery | Africa</title>
-
-<!-- Internal CSS -->
-<style>
-
-body{
-    margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg,#1e3c72,#2a5298);
-    color:white;
-}
-
-/* Navigation */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(10px);
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    font-weight:bold;
-}
-
-/* Hero Section */
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
-
-.hero h1{
-    font-size:45px;
-    margin-bottom:10px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-/* Gallery Grid */
-.gallery{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    padding:40px;
-}
-
-/* Image Containers */
-.card{
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(12px);
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,0.4);
-    transition: all 0.4s ease;
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card h3{
-    padding:15px;
-    text-align:center;
-}
-
-/* Footer */
-footer{
-    text-align:center;
-    padding:20px;
-    background:rgba(0,0,0,0.4);
-}
-
-</style>
-
-<!-- External CSS -->
+<title>Best Cars - Home</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
-<nav>
-    <div style="font-size:22px; font-weight:bold;">Wildlife Africa</div> <!-- Inline CSS -->
-    <div>
-        <a href="#">Home</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-    </div>
+<header>
+<h1>Best Cars</h1>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<nav id="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="testimonials.html">Testimonials</a>
 </nav>
+</header>
 
 <section class="hero">
-    <h1 style="color:#00ffcc;">Explore African Wildlife</h1> <!-- Inline CSS -->
-    <p>Experience the beauty of nature through our professional wildlife collection.</p>
+<h2 class="fade-in">Welcome to the World of Cars</h2>
+<p class="fade-in">Explore luxury, speed, and performance</p>
 </section>
 
 <section class="gallery">
+<a href="car1.html"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a"></a>
+<a href="car2.html"><img src="https://images.unsplash.com/photo-1493238792000-8113da705763"></a>
+<a href="car3.html"><img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c"></a>
+<a href="car4.html"><img src="https://images.unsplash.com/photo-1549924231-f129b911e442"></a>
+<a href="car5.html"><img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"></a>
+<a href="car6.html"><img src="https://images.unsplash.com/photo-1517949908111-721b3d1a6d4a"></a>
+</section>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Lion">
-        <h3>Lion</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" alt="Elephant">
-        <h3>Elephant</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1552410260-0fd9b577afa6" alt="Giraffe">
-        <h3>Giraffe</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1549366021-9f761d040a94" alt="Zebra">
-        <h3>Zebra</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801" alt="Cheetah">
-        <h3>Cheetah</h3>
-    </div>
-
+<section class="videos">
+<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+<iframe src="https://www.youtube.com/embed/oUFJJNQGwhk"></iframe>
+<iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ"></iframe>
+<iframe src="https://www.youtube.com/embed/5qap5aO4i9A"></iframe>
 </section>
 
 <footer>
-    © 2026 Wildlife Gallery | Designed by Ibrahim
+<p>© 2026 Best Cars</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
-<a href="https://ibrahimmdome-ops.github.io/25-0206-/assignments.html" style="color:white; text-decoration: none; font-weight: bold;">assignments</a>
-  <header> 
-    
 </html>
 
 
+<!-- ================= CAR DETAILS (car1.html example, copy for others) ================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Car Details</h1>
+<nav>
+<a href="index.html">Home</a>
+</nav>
+</header>
+
+<section class="details">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+<h2>BMW M4</h2>
+<p>Speed: 250 km/h</p>
+<p>Engine: 3.0L Twin Turbo</p>
+<p>Price: $70,000</p>
+</section>
+
+</body>
+</html>
+
+
+<!-- ================= CSS FILE (style.css) ================= -->
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #111;
+    color: white;
+}
+header {
+    background: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    display: flex;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: yellow;
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(to right, black, gray);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.videos iframe {
+    width: 45%;
+    height: 200px;
+    margin: 10px;
+}
+.details {
+    text-align: center;
+    padding: 20px;
+}
+.details img {
+    width: 80%;
+    border-radius: 10px;
+}
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);} 
+    to {opacity: 1; transform: translateY(0);} 
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .videos iframe {
+        width: 100%;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+    nav a {
+        padding: 10px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+<!-- ================= JAVASCRIPT (script.js) ================= -->
+function toggleMenu() {
+    var nav = document.getElementById("nav");
+    if (nav.style.display === "flex") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "flex";
+    }
+}
 
